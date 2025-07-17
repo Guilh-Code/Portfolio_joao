@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Nome - Desenvolvedor Front-End</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO E NAVEGAÇÃO -->
+    <header>
+        <nav>
+            <a href="#inicio" class="logo">Seu Nome</a>
+            <ul class="nav-list">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#livros">Livros</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <!-- MENU HAMBÚRGUER (será visível apenas no mobile) -->
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- SEÇÃO INÍCIO -->
+        <section id="inicio">
+            <div class="inicio-content">
+                <div class="inicio-text">
+                    <h1 class="fade-in">Título Principal do Portfólio</h1>
+                    <p class="fade-in">Uma frase de efeito ou um breve resumo sobre seu trabalho.</p>
+                </div>
+                <div class="inicio-image zoom-in">
+                    <!-- Coloque o caminho para sua imagem de destaque -->
+                    <img src="assets/images/imagem-destaque.jpg" alt="Imagem de Destaque">
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO SOBRE MIM -->
+        <section id="sobre" class="section-hidden">
+            <h2>Sobre Mim</h2>
+            <div class="sobre-content">
+                <div class="sobre-image">
+                     <!-- Coloque o caminho para sua foto -->
+                    <img src="assets/images/sua-foto.jpg" alt="Foto de [Seu Nome]">
+                </div>
+                <div class="sobre-text">
+                    <p>Aqui você vai escrever um texto cativante sobre sua jornada profissional, suas paixões na área de tecnologia e seus objetivos. Fale sobre como você gosta de resolver problemas e criar soluções incríveis.</p>
+                    <a href="curr.pdf" download class="btn">Download CV</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO HABILIDADES -->
+        <section id="habilidades" class="section-hidden">
+            <h2>Habilidades</h2>
+            <div class="habilidades-container">
+                <div class="habilidade-box"><span>HTML5</span></div>
+                <div class="habilidade-box"><span>CSS3</span></div>
+                <div class="habilidade-box"><span>JavaScript</span></div>
+                <div class="habilidade-box"><span>React</span></div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO PROJETOS -->
+        <section id="projetos" class="section-hidden">
+            <h2>Projetos</h2>
+            <div id="projetos-container" class="card-container">
+                <!-- Cards de Projetos serão inseridos aqui pelo JavaScript -->
+            </div>
+            <button id="ver-mais-projetos" class="btn">Ver Mais</button>
+        </section>
+
+        <!-- SEÇÃO SUGESTÕES DE LIVROS -->
+        <section id="livros" class="section-hidden">
+            <h2>Sugestões de Livros</h2>
+            <div id="livros-container" class="card-container">
+                <!-- Cards de Livros serão inseridos aqui pelo JavaScript -->
+            </div>
+            <button id="ver-mais-livros" class="btn">Ver Mais</button>
+        </section>
+
+        <!-- SEÇÃO CONTATO -->
+        <section id="contato" class="section-hidden">
+            <h2>Contato</h2>
+            <p>Vamos nos conectar! Me encontre nas redes abaixo.</p>
+            <div class="contato-container">
+                <!-- Coloque seus ícones SVG aqui -->
+                <a href="URL_DO_SEU_LINKEDIN" target="_blank" title="LinkedIn">
+                    <!-- Ícone SVG do LinkedIn aqui -->
+                </a>
+                <a href="URL_DO_SEU_GITHUB" target="_blank" title="GitHub">
+                    <!-- Ícone SVG do GitHub aqui -->
+                </a>
+                <a href="mailto:SEU_EMAIL@exemplo.com" title="Email">
+                     <!-- Ícone SVG do Email aqui -->
+                </a>
+                <a href="URL_DO_SEU_INSTAGRAM" target="_blank" title="Instagram">
+                     <!-- Ícone SVG do Instagram aqui -->
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>© 2025 [Seu Nome]. Feito com ❤️ e código.</p>
+    </footer>
+
+    <!-- ESTRUTURA DO MODAL (JANELA DE ZOOM) -->
+    <div id="modal-overlay" class="modal-hidden">
+        <div class="modal-content">
+            <span id="modal-close" class="modal-close-btn">×</span>
+            <div id="modal-body">
+                <!-- O conteúdo expandido será injetado aqui pelo JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
